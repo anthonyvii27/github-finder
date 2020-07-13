@@ -13,7 +13,7 @@ export default function Routes() {
     <BRouter>
       <Switch>
         <Route path="/" exact component={ Home } />
-        <Route path="/repos/anthonyvii27" component={ Repos } />
+        <Route path="/repos/:id" component={ Repos } />
       </Switch>
     </BRouter>
   )
