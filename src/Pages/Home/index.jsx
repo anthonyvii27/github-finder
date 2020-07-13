@@ -140,9 +140,9 @@ export default function Home() {
               
               <div className="repos-area">
                 <h1>Repositories: {userData.public_repos}</h1>
-                {/* <div>
+                <div>
                   <button onClick={() => window.location.href = `/repos/${userData.login}`}>See more</button>
-                </div> */}
+                </div>
               </div>
             </>
           : alert}              
