@@ -27,10 +27,10 @@ export default function Home() {
           return
         }
       }
-      console.log(latestSearches.length)
+
       if(latestSearches.length >= 9) {
         let aux = latestSearches;
-        aux.pop();
+        aux.shift();
         setLatestSearches(aux);
       }
 
@@ -141,12 +141,11 @@ export default function Home() {
               <div className="repos-area">
                 <h1>Repositories: {userData.public_repos}</h1>
                 <div>
-                  <button>See more</button>
+                  <button onClick={() => window.location.href = `/repos/${userData.login}`}>See more</button>
                 </div>
               </div>
             </>
-          : alert}
-              
+          : alert}              
         </div>
       </section>
     </Container>

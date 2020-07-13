@@ -16,3 +16,7 @@ button {
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+a {
+  text-decoration: none;
+}

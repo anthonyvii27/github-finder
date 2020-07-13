@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import {
   BrowserRouter as BRouter,
   Switch,
@@ -13,7 +13,7 @@ export default function Routes() {
     <BRouter>
       <Switch>
         <Route path="/" exact component={ Home } />
-        <Route path="/repo:id" component={ Repos } />
+        <Route path="/repos/:id" component={ Repos } />
       </Switch>
     </BRouter>
   )
