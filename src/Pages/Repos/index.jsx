@@ -34,7 +34,7 @@ export default function Repos() {
       return <img src={follower.avatar_url} key={follower.id} className="follower-icon" alt="follower_image" title={follower.login} />
     } else {
       if(count === 6) {
-        let remaining = userData.followers.length - count;
+        let remaining = userFollowers.length - count;
         count += 1;
         return <div className="div-follower-icon" key="last">+{remaining}</div>
       }
